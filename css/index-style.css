@@ -1,0 +1,155 @@
+#main-header {
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+  width: 100%;
+}
+
+#logo {
+  width: 7rem;
+  height: 6rem;
+}
+
+#logo-text {
+  display: none;
+  font-size: 2rem;
+  margin-right: 0.5em;
+  white-space: nowrap;
+}
+
+#search-button {
+  background-color: #22a4d9;
+  cursor: pointer;
+}
+
+#search-container {
+  width: 30%;
+  display: flex;
+}
+
+#main-nav {
+  width: 40%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links > li > a {
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 3px;
+  padding: 1.2em 1.4em;
+}
+
+#sign-in-button a {
+  background-color: #22a4d9;
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 3px;
+  padding: 1.2em 1.4em;
+  margin: 0 0.5em;
+}
+
+#register-button a {
+  background-color: #ba1c57;
+  font-size: 1.2rem;
+  display: block;
+  border-radius: 3px;
+  padding: 1.2em 1.4em;
+  margin: 0 0.5em;
+}
+
+#categories-dropdown-button {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 1.2em 1.4em;
+  background-color: inherit;
+  margin: 0;
+  white-space: nowrap;
+}
+
+#categories-dropdown-container {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 106.59px;
+}
+
+#categories-dropdown-container a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 1.2em 1.4em;
+}
+
+#categories-dropdown-container a:hover,
+.nav-links > li > a:hover {
+  background-color: #22a4d9;
+}
+
+#categories-dropdown-button:hover {
+  background-color: #22a4d9;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#categories-dropdown:hover #categories-dropdown-container {
+  background-color: #000;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  #logo-text {
+    display: block;
+  }
+  #main-header {
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  #search-container {
+    width: 50%;
+  }
+
+  #main-nav {
+    width: 100%;
+    order: 5;
+  }
+
+  #sign-in-button {
+    order: 3;
+  }
+
+  #register-button {
+    order: 4;
+  }
+
+  #categories-dropdown-container {
+    width: 81.43px;
+  }
+}
+
+@media (max-width: 640px) {
+  #search-container {
+    width: 70%;
+  }
+
+  #main-header > .container:nth-of-type(1) {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #categories-dropdown-container {
+    width: 65.14px;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/index-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <title>Lorem Ipsum Movies</title>
+  </head>
+
+  <script></script>
+
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <img id="logo" src="./img/logo.png" alt="Logo" />
+        <h2 id="logo-text">Lorem Ipsum</h2>
+      </div>
+      <form id="search-container">
+        <input
+          type="search"
+          name="searchForMovie"
+          id="search-for-movie"
+          placeholder="Search..."
+        />
+        <button id="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+      <nav id="main-nav">
+        <ul class="nav-links">
+          <li><a href="">Movies</a></li>
+          <li><a href="">TV Shows</a></li>
+          <li><a href="">Community</a></li>
+          <li id="categories-dropdown">
+            <button id="categories-dropdown-button">
+              Categories
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="categories-dropdown-container">
+              <ul>
+                <li><a href="">Action</a></li>
+                <li><a href="">Animated</a></li>
+                <li><a href="">Drama</a></li>
+                <li><a href="">Thriller</a></li>
+                <li><a href="">Sci-Fi</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="container">
+        <span id="sign-in-button"><a href="">Sign in</a></span>
+        <span id="register-button"><a href="">Register</a></span>
+      </div>
+    </header>
+    <main>
+      <article id="hero"></article>
+    </main>
+    <footer></footer>
+  </body>
+</html>
