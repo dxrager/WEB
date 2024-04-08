@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/shared.css" />
-    <link rel="stylesheet" href="./css/index-style.css" />
+    <script src="./scripts/jquery-3.7.1.js"></script>
+    <script src="./scripts/index.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,18 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/shared.css" />
+    <link rel="stylesheet" href="./css/index-style.css" />
     <title>Lorem Ipsum Movies</title>
   </head>
-
-  <script></script>
 
   <body>
     <header id="main-header">
       <a id="logo" href="./index.html"
         ><img id="logo-img" src="./img/logo.png" alt="Logo"
       /></a>
-
       <form id="search-container">
         <input
           type="search"
@@ -35,7 +33,6 @@
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
       </form>
-
       <nav id="main-nav">
         <ul class="container">
           <li><a href="">Movies</a></li>
@@ -58,7 +55,6 @@
           </li>
         </ul>
       </nav>
-
       <div class="container">
         <span id="sign-in-button"><a href="">Sign in</a></span>
         <span id="register-button"><a href="">Register</a></span>
@@ -66,7 +62,41 @@
     </header>
 
     <main>
-      <article id="hero"></article>
+      <article id="hero">
+        <section class="slideshow-container">
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-1.jpg" />
+          </div>
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-2.jpg" />
+          </div>
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-3.jpg" />
+          </div>
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-4.jpg" />
+          </div>
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-5.jpg" />
+          </div>
+          <div class="my-slides fade">
+            <img src="./img/index/slide-show-img-6.jpg" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="slideshow-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+        </section>
+        <section class="container"></section>
+      </article>
     </main>
 
     <footer></footer>
