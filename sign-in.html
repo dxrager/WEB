@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Sign In</title>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/sign-in-style.css">
 </head>
 <body>
-
-<div class="container">
-    <img src="" alt="Logo" class="logo">
-    <form action="#" method="post">
-        <input type="text" name="username" placeholder="Email or phone number" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="Sign In">
-    </form>
-    <div class="signup-link">
-        New to? <a href="#">Sign up now.</a>
+    <div class="signin-container">
+        <h2>Sign In</h2>
+        <form action="#" method="POST">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
     </div>
-</div>
-
+    <footer>
+        
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
 </body>
 </html>
