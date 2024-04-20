@@ -1,0 +1,37 @@
+body {
+    background: linear-gradient(50deg, #243e93, #c7325e);    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+
+
+.container {
+    width: 400px;
+    margin: 40px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+h2 {
+    margin-bottom: 22px;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+ul {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    font-size: 12px;
+}

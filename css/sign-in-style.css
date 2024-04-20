@@ -1,9 +1,7 @@
-
 body {
-    font-family: Arial, sans-serif;
+    background: linear-gradient(50deg, #243e93, #c7325e);    
     margin: 0;
     padding: 0;
-    background: linear-gradient(50deg, #243e93, #c7325e);
     height: 100vh;
 }
 
@@ -16,7 +14,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.signin-container h2 {
+.signin-container h2 {  
     text-align: center;
 }
 
@@ -49,4 +47,27 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 15px;
+}
+
+label {
+    display: block;
+    margin: 8px;
+}
+
+.harrove {
+   background-color: #000000;
+   color: #007bff;
+}
+
+.harrove:hover {
+    background-color: #007bff;
+    color: #fff;
 }

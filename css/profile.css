@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(50deg, #243e93, #c7325e);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.profile-container {
+    background-color: #000000;
+    max-width: 80%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.profile-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.profile-info img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.profile-info p {
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+}
+
+.recently-watched {
+    margin-top: 20px;
+}
+.recently-watched h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.recently-watched ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.recently-watched li {
+    margin-bottom: 5px;
+}
+
+button {
+    width: auto;
+    padding: 10px 15px;
+    background-color: rebeccapurple;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 2px;
+}
+
+.delete-account {
+    background-color: #000000;
+    color: #ff0000;
+    
+ }
+
+ .delete-account:hover {
+    background-color: #ff0000;
+    color: #fff;
+ }
