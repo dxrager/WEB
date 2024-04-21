@@ -1,0 +1,75 @@
+
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.plan-radio {
+    display: none;
+}
+.plan-wrapper {
+    flex: 1 1 300px;
+    margin: 10px;
+    height: 300px;
+}
+.plan {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.3s;
+    color: #333;
+    background-color: #fff;
+    cursor: pointer;
+    height: 100%;
+    font-size: 16px;
+}
+.plan:hover {
+    transform: scale(1.05);
+    background-image: linear-gradient(to bottom right, #4a90e2, #ff00ff);
+    color: #fff;
+}
+.plan h2 {
+    color: #333;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+.plan li {
+    margin-bottom: 10px;
+}
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 50px auto;
+    padding: 10px 20px;
+    background-color: #00980f;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+.cta-button:hover {
+    background-color: #00dd00;
+}
+.plan-radio:checked + .plan {
+    background-image: linear-gradient(to bottom right, #4a90e2, #ff00ff);
+    color: #fff;
+}
